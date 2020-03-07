@@ -1,15 +1,15 @@
 package pl.sda.banki;
 
 public class Main {
-    public static void konto (User user, BankAcount bank){
-        System.out.println("Imię: " + user.getName());
-        System.out.println("Nazwisko: " + user.getLastName());
-        System.out.println("Wiek: " + user.getAge());
-        System.out.println("Nazwa Banku: " + bank.getName());
-        System.out.println("Numer konta: " + bank.getAccountNumber());
-        System.out.println("Saldo: " + bank.getBalance());
-        System.out.println();
-    }
+    //public static void konto (User user, BankAcount bank){
+    //  System.out.println("Imię: " + user.getName());
+    //System.out.println("Nazwisko: " + user.getLastName());
+    //System.out.println("Wiek: " + user.getAge());
+    // System.out.println("Nazwa Banku: " + bank.getName());
+    // System.out.println("Numer konta: " + bank.getAccountNumber());
+    // System.out.println("Saldo: " + bank.getBalance());
+    // System.out.println();
+
 
     public static void main(String[] args) {
         // write your code here
@@ -23,10 +23,19 @@ public class Main {
         BankAcount bank3 = new BankAcount (3, "Bank", 3333, 234234);
         BankAcount bank4 = new BankAcount (4, "BigBank", 2222, 2342);
 
-        Main.konto (user1, bank1);
-        Main.konto (user2, bank2);
-        Main.konto (user3, bank3);
-        Main.konto (user4, bank4);
+        //Main.konto (user1, bank1);
+        //Main.konto (user2, bank2);
+        //Main.konto (user3, bank3);
+        //Main.konto (user4, bank4);
+        user1.setBankAcount (bank1);
+        user2.setBankAcount (bank2);
+        user3.setBankAcount (bank3);
+        user4.setBankAcount (bank4);
+
+        System.out.println (user1.getBankAcount ().getBalance () );
+        System.out.println (user2.getBankAcount ().getBalance () );
+        System.out.println (user3.getBankAcount ().getBalance () );
+        System.out.println (user4.getBankAcount ().getBalance () );
 
     }
 }

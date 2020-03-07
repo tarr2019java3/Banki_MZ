@@ -1,9 +1,18 @@
 package pl.sda.banki;
 
 public class User {
-    String name;
-    String lastName;
-    int age;
+    private String name;
+    private String lastName;
+    private int age;
+    private BankAcount bankAcount;
+
+    public BankAcount getBankAcount() {
+        return bankAcount;
+    }
+
+    public void setBankAcount(BankAcount bankAcount) {
+        this.bankAcount = bankAcount;
+    }
 
     public User(String name, String lastName, int age) {
         this.name = name;
