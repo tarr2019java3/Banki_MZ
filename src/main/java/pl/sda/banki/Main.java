@@ -53,14 +53,7 @@ public class Main {
         ObjectMapper Object = new ObjectMapper ();
         try {
             Object.writeValue (new File ("lista.json"), users);
-            Object.writeValue (new File ("user1"), user1);
-            Object.writeValue (new File ("user2"), user2);
-            Object.writeValue (new File ("user3"), user3);
-            Object.writeValue (new File ("user4"), user4);
-            Object.writeValue (new File ("Konto1"), bank1);
-            Object.writeValue (new File ("Konto2"), bank2);
-            Object.writeValue (new File ("Konto3"), bank3);
-            Object.writeValue (new File ("Konto4"), bank4);
+
         } catch (IOException e) {
             e.printStackTrace ( );
         }
