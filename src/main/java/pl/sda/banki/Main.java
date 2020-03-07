@@ -32,10 +32,10 @@ public class Main {
         user3.setBankAcount (bank3);
         user4.setBankAcount (bank4);
 
-        System.out.println (user1.getBankAcount ().getBalance () );
-        System.out.println (user2.getBankAcount ().getBalance () );
-        System.out.println (user3.getBankAcount ().getBalance () );
-        System.out.println (user4.getBankAcount ().getBalance () );
+        System.out.println (user1.getName () + ", " + user1.getLastName () + ", " + user1.getBankAcount ().getBalance () );
+        System.out.println (user2.getName () + ", " + user2.getLastName () + ", " + user2.getBankAcount ().getBalance () );
+        System.out.println (user3.getName () + ", " + user3.getLastName () + ", " + user3.getBankAcount ().getBalance () );
+        System.out.println (user4.getName () + ", " + user4.getLastName () + ", " + user4.getBankAcount ().getBalance () );
 
     }
 }
