@@ -53,7 +53,6 @@ public class Main {
         ObjectMapper Object = new ObjectMapper ();
         try {
             Object.writeValue (new File ("lista.json"), users);
-
         } catch (IOException e) {
             e.printStackTrace ( );
         }
